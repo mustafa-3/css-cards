@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 0.5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0 10px 0 #4095bf;
+  transform: scale(0.97);
+}
+.btn-contained {
+  background: #4095bf;
+  color: white;
+}
+.btn-contained:hover,
+.btn-contained:focus {
+  background: #20739d;
+}
+.btn-outline {
+  color: #4095bf;
+  background: none;
+  border: 1px solid #4095bf;
+}
+.btn-outline:hover {
+}
+
+.card {
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 #7775;
+  height: max-content;
+}
+
+.card-border {
+  border: 1px solid grey;
+  box-shadow: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  gap: 10px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16 / 9;
+}
+.image:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-title {
+  font-weight: lighter;
+}
+
+.buttons {
+  display: flex;
+  gap: 7px;
+  margin-top: 1rem;
+}
+
+.content {
+  padding: 1rem;
+}
